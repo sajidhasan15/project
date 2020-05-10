@@ -39,7 +39,7 @@ export class AppComponent {
   }
 
   deleteList(from: any){
-    this.forms = this.forms.filter( t => t.name !== t.name);
+    this.forms = this.forms.filter( f => f.name !== f.name);
   }
   
 }

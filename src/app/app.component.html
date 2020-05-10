@@ -7,12 +7,12 @@
    <div class="table text-center">
      <tr>
        <th>Name</th>
-       <th>Description</th>
+       <!-- <th>Description</th> -->
        <th>Action</th>
      </tr>
      <tr *ngFor="let form of forms">
        <td>{{form.name}}</td>
-       <td> {{form.description}} </td>
+       <!-- <td> {{form.description}} </td> -->
        <td>
          <button (click)="deleteList(form)">Delete</button>
        </td>
