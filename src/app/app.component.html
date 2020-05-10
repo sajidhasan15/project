@@ -1,0 +1,21 @@
+<h1 class="text-center"> {{ title }} </h1>
+<div class="container text-center">
+  
+  <input type="text" #newForm />
+  <button (click)="addForm(newForm.value); newForm.value=''">Add Forms</button>
+
+   <div class="table text-center">
+     <tr>
+       <th>Name</th>
+       <th>Description</th>
+       <th>Action</th>
+     </tr>
+     <tr *ngFor="let form of forms">
+       <td>{{form.name}}</td>
+       <td> {{form.description}} </td>
+       <td>
+         <button (click)="deleteList(form)">Delete</button>
+       </td>
+     </tr>
+   </div>
+</div>
